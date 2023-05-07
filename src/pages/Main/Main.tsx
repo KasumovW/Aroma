@@ -3,7 +3,7 @@ import { AiFillCaretUp, AiFillCaretDown } from 'react-icons/ai';
 import { BsFillCircleFill, BsFillSquareFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/logo.jpeg';
+import logo from '../../assets/logo.png';
 
 const Main = () => {
     return (

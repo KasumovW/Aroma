@@ -25,12 +25,6 @@ const Aroma = () => {
             <p className={s.name}>{data.price} ₽ / мл</p>
             <div className={s.line} />
 
-            <div className={s.image}>
-                <img src={data.image} alt='Картинка не прогрузилась' />
-                <ul>{data.accords && data?.accords.map((item) => <li>{item}</li>)}</ul>
-            </div>
-
-            <div className={s.line} />
             {data.notes &&
                 data?.notes.map((aroma) => (
                     <>
