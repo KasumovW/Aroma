@@ -1,0 +1,44 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    overflow: scroll;
+    height: 100vh;
+    padding: 20px;
+
+    img {
+        width: 200px;
+        height: 50px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .block {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: white;
+
+        p {
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        svg {
+            width: 60px;
+            height: 60px;
+            fill: rgb(148, 26, 176);
+        }
+    }
+}

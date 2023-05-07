@@ -1,0 +1,53 @@
+{
+    "aromas": [
+        {
+            "id": 1,
+            "for": 1,
+            "number": 9,
+            "title": "Очень длинное название женского парфюма",
+            "price": 150,
+            "accords": ["Фруктовый", "Сладкий", "Кожанный", "Дымный"],
+            "notes": [
+                {
+                    "title": "Ноты сердца",
+                    "note": [
+                        {
+                            "title": "Бергамот",
+                            "img": "https://priroda.club/uploads/posts/2022-01/thumbs/1643606235_84-priroda-club-p-bergamot-trava-priroda-krasivo-foto-96.jpg"
+                        },
+                        {
+                            "title": "Ананас",
+                            "img": "https://klike.net/uploads/posts/2022-08/1661071250_5-60.jpg"
+                        }
+                    ]
+                }
+            ],
+            "image": "https://avatars.mds.yandex.net/get-mpic/4012150/img_id6403750884465699920.jpeg/orig"
+        },
+        {
+            "id": 1,
+            "for": 1,
+            "number": 9,
+            "title": "длинное название парфюма",
+            "price": 150,
+            "accords": ["Фруктовый", "Сладкий", "Кожанный", "Дымный"],
+            "notes": [
+                {
+                    "title": "Ноты сердца",
+                    "note": [
+                        {
+                            "title": "Бергамот",
+                            "img": "https://priroda.club/uploads/posts/2022-01/thumbs/1643606235_84-priroda-club-p-bergamot-trava-priroda-krasivo-foto-96.jpg"
+                        },
+                        {
+                            "title": "Ананас",
+                            "img": "https://klike.net/uploads/posts/2022-08/1661071250_5-60.jpg"
+                        }
+                    ]
+                }
+            ],
+            "image": "https://avatars.mds.yandex.net/get-mpic/4012150/img_id6403750884465699920.jpeg/orig"
+        }
+    ]
+}
+

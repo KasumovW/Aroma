@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .iconArrow {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 10px;
+        z-index: 10;
+    }
+
+    img {
+        width: 200px;
+        height: 50px;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}
