@@ -12,6 +12,7 @@
     },
     "dependencies": {
         "concurrently": "^8.0.1",
+        "js-cookie": "^3.0.5",
         "json-server": "^0.17.3",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -20,6 +21,7 @@
         "sass": "^1.62.1"
     },
     "devDependencies": {
+        "@types/js-cookie": "^3.0.3",
         "@types/react": "^18.2.0",
         "@types/react-dom": "^18.2.1",
         "@typescript-eslint/eslint-plugin": "^5.57.1",
@@ -32,4 +34,3 @@
         "vite": "^4.3.2"
     }
 }
-

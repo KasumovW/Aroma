@@ -3,6 +3,8 @@ import NotFound from '../pages/NotFound/NotFound';
 import Main from '../pages/Main/Main';
 import Aromas from '../pages/Aromas/Aromas';
 import Aroma from '../pages/Aroma/Aroma';
+import Admin from '../pages/Admin/Admin/Admin';
+import AdminEditPost from '../pages/Admin/AdminEditPost/AdminEditPost';
 
 export const router = createBrowserRouter([
     {
@@ -26,8 +28,27 @@ export const router = createBrowserRouter([
         errorElement: <NotFound />,
     },
     {
-        path: '/:for/:id',
+        path: '/aroma/:for/:id',
         element: <Aroma />,
         errorElement: <NotFound />,
+    },
+
+    //private routes
+    {
+        path: '/admin',
+        element: <Admin />,
+        errorElement: <NotFound />,
+    },
+    {
+        path: '/admin/add-item',
+        element: <AdminEditPost type='add' />,
+    },
+    {
+        path: '/admin/change-item',
+        element: <AdminEditPost type='change' />,
+    },
+    {
+        path: '/admin/all-items',
+        element: <AdminEditPost type='get' />,
     },
 ]);

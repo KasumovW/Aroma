@@ -10,8 +10,6 @@ const Aroma = () => {
     const { id } = useParams();
     const { data = [], error, loading } = useFetch(`http://localhost:3000/aromas/${id}`);
 
-    console.log(data);
-
     if (loading) {
         <Loader />;
     }

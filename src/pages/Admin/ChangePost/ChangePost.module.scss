@@ -1,0 +1,81 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+
+    padding: 40px 10px 0 10px;
+
+    h1 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    form {
+        h3 {
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 35px;
+            margin-bottom: 5px;
+        }
+
+        .main {
+            input {
+                display: block;
+                width: 90%;
+                font-size: 24px;
+                margin: 10px auto;
+                border: none;
+            }
+
+            select {
+                width: 90%;
+                font-size: 24px;
+                margin: 0 auto;
+                display: block;
+            }
+        }
+
+        .akkord {
+            div {
+                display: flex;
+                margin: auto;
+                justify-content: center;
+
+                input {
+                    width: 60%;
+                    font-size: 24px;
+                    margin-right: 5%;
+                    border: none;
+                }
+
+                button {
+                    font-size: 14px;
+                    width: 25%;
+                }
+            }
+
+            span {
+                width: 90%;
+                margin: 20px auto;
+                display: block;
+            }
+        }
+
+        .notes {
+            input {
+                display: block;
+                width: 90%;
+                margin: 10px auto;
+                font-size: 24px;
+                border: none;
+            }
+        }
+
+        .notes + button {
+            width: 80%;
+            display: block;
+            margin: 40px auto;
+            font-size: 18px;
+        }
+    }
+}
