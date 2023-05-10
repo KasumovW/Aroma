@@ -9,19 +9,19 @@ const Main = () => {
     return (
         <div className={s.container}>
             <img src={logo} alt='Картинка не прогрузилась' />
-            <Link to='/women'>
+            <Link to='/aroma/women'>
                 <div className={s['block']}>
                     <AiFillCaretUp />
                     <p className={s.title}>Женские ароматы</p>
                 </div>
             </Link>
-            <Link to='/man'>
+            <Link to='/aroma/man'>
                 <div className={s['block']}>
                     <AiFillCaretDown />
                     <p>Мужские ароматы</p>
                 </div>
             </Link>
-            <Link to='/uneversal'>
+            <Link to='/aroma/uneversal'>
                 <div className={s['block']}>
                     <BsFillCircleFill />
                     <p>Универсальные ароматы</p>

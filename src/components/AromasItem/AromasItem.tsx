@@ -17,7 +17,7 @@ const AromasItem = ({ aroma }: Props) => {
     const path = location.pathname.slice(1, location.pathname.length);
 
     return (
-        <Link className={s.link} to={`/aroma/${path}/${aroma.id}`}>
+        <Link className={s.link} to={`/${path}/${aroma.id}`}>
             <div className={s.container}>
                 <div className={s.title}>
                     <div className={s.number}>{aroma.number}</div>

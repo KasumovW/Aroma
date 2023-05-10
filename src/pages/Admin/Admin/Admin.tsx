@@ -3,6 +3,7 @@ import s from './Admin.module.scss';
 
 import cookies from 'js-cookie';
 import { Link } from 'react-router-dom';
+import Header from '../../../components/Header/Header';
 
 const Admin = () => {
     const token = cookies.get('token') || null;
@@ -46,17 +47,20 @@ const Admin = () => {
     }
 
     return (
-        <nav className={s.navPanel}>
-            <Link to='/admin/all-items'>
-                <button>Список всех ароматов</button>
-            </Link>
-            <Link to='/admin/add-item'>
-                <button>Добавить аромат</button>
-            </Link>
-            <Link to='/admin/change-item'>
+        <>
+            <Header />
+            <nav className={s.navPanel}>
+                <Link to='/admin/all-items'>
+                    <button>Список всех ароматов</button>
+                </Link>
+                <Link to='/admin/add-item'>
+                    <button>Добавить аромат</button>
+                </Link>
+                {/* <Link to='/admin/change-item'>
                 <button>Изменить аромат</button>
-            </Link>
-        </nav>
+            </Link> */}
+            </nav>
+        </>
     );
 };
 

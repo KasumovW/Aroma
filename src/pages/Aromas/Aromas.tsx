@@ -10,7 +10,6 @@ type Props = {
 
 const Aromas = ({ aromas }: Props) => {
     const path = window.location.href;
-    console.log(path);
     const { data, loading, error } = useFetch(`http://localhost:3000/aromas?for=${aromas.id}`);
 
     if (loading) {

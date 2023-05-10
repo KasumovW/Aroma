@@ -1,53 +1,65 @@
 {
-    "aromas": [
+  "aromas": [
+    {
+      "id": 3,
+      "for": 1,
+      "number": 9,
+      "title": "Очень длинное название женского парфюма",
+      "price": 150,
+      "accords": [
+        "Фруктовый",
+        "Сладкий",
+        "Кожанный",
+        "Дымный"
+      ],
+      "notes": [
         {
-            "id": 1,
-            "for": 1,
-            "number": 9,
-            "title": "Очень длинное название женского парфюма",
-            "price": 150,
-            "accords": ["Фруктовый", "Сладкий", "Кожанный", "Дымный"],
-            "notes": [
-                {
-                    "title": "Ноты сердца",
-                    "note": [
-                        {
-                            "title": "Бергамот",
-                            "img": "https://priroda.club/uploads/posts/2022-01/thumbs/1643606235_84-priroda-club-p-bergamot-trava-priroda-krasivo-foto-96.jpg"
-                        },
-                        {
-                            "title": "Ананас",
-                            "img": "https://klike.net/uploads/posts/2022-08/1661071250_5-60.jpg"
-                        }
-                    ]
-                }
-            ],
-            "image": "https://avatars.mds.yandex.net/get-mpic/4012150/img_id6403750884465699920.jpeg/orig"
-        },
-        {
-            "id": 1,
-            "for": 1,
-            "number": 9,
-            "title": "длинное название парфюма",
-            "price": 150,
-            "accords": ["Фруктовый", "Сладкий", "Кожанный", "Дымный"],
-            "notes": [
-                {
-                    "title": "Ноты сердца",
-                    "note": [
-                        {
-                            "title": "Бергамот",
-                            "img": "https://priroda.club/uploads/posts/2022-01/thumbs/1643606235_84-priroda-club-p-bergamot-trava-priroda-krasivo-foto-96.jpg"
-                        },
-                        {
-                            "title": "Ананас",
-                            "img": "https://klike.net/uploads/posts/2022-08/1661071250_5-60.jpg"
-                        }
-                    ]
-                }
-            ],
-            "image": "https://avatars.mds.yandex.net/get-mpic/4012150/img_id6403750884465699920.jpeg/orig"
+          "title": "Ноты сердца",
+          "note": [
+            {
+              "title": "Бергамот",
+              "img": "https://priroda.club/uploads/posts/2022-01/thumbs/1643606235_84-priroda-club-p-bergamot-trava-priroda-krasivo-foto-96.jpg"
+            },
+            {
+              "title": "Ананас",
+              "img": "https://klike.net/uploads/posts/2022-08/1661071250_5-60.jpg"
+            }
+          ]
         }
-    ]
+      ],
+      "image": "https://avatars.mds.yandex.net/get-mpic/4012150/img_id6403750884465699920.jpeg/orig"
+    },
+    {
+      "for": "2",
+      "number": "29",
+      "title": "Creed Aventus",
+      "price": "180",
+      "accords": [
+        "Кожанный ",
+        "Не кожынный",
+        "хер"
+      ],
+      "notes": [
+        {
+          "title": "Ноты сердац",
+          "note": [
+            {
+              "title": "Кожа",
+              "img": "https://avatars.mds.yandex.net/i?id=66b88dff7843e92a669ed56a17dd91300db4e4a9-4234038-images-thumbs&n=13"
+            },
+            {
+              "title": "Абрикос",
+              "img": "https://proprikol.ru/wp-content/uploads/2019/11/foto-abrikos-10.jpg"
+            },
+            {
+              "title": "Кожа реальный",
+              "img": "http://phonoteka.org/uploads/posts/2021-06/1623153023_18-phonoteka_org-p-tekstura-krokodilovoi-kozhi-krasivo-32.jpg"
+            }
+          ]
+        }
+      ],
+      "image": "https://avatars.mds.yandex.net/i?id=66b88dff7843e92a669ed56a17dd91300db4e4a9-4234038-images-thumbs&n=13",
+      "id": 4
+    }
+  ]
 }
-
