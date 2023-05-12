@@ -27,7 +27,7 @@ const Main = () => {
                     <p>Универсальные ароматы</p>
                 </div>
             </Link>
-            <Link to='/construct'>
+            <Link to='/aroma/selection'>
                 <div className={s['block']}>
                     <BsFillSquareFill />
                     <p>Подбор аромата</p>
