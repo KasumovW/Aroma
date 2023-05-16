@@ -1,4 +1,3 @@
-import React from 'react';
 import s from './Pisck.module.scss';
 
 type Props = {

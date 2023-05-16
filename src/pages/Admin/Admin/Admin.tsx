@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import s from './Admin.module.scss';
 
 import cookies from 'js-cookie';
@@ -17,6 +17,7 @@ const Admin = () => {
             window.location.reload();
         }
 
+        console.log(userData.login, userData.password);
         return false;
     };
 
