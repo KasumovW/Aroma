@@ -7,7 +7,9 @@ import s from './AllPosts.module.scss';
 import { useEffect, useState } from 'react';
 
 const AllPost = () => {
-    const { data, loading, error } = useFetch('http://localhost:3000/aromas');
+    const { data, loading, error } = useFetch(
+        'https://my-json-server.typicode.com/KasumovW/aroma-synd/aromas'
+    );
     const [localData, setLocalData] = useState([]);
 
     useEffect(() => {

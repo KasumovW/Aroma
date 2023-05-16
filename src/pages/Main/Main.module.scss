@@ -2,6 +2,11 @@
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     max-width: 500px;
     margin: auto;
@@ -16,7 +21,8 @@
         margin: 20px auto;
     }
 
-    .block {
+    .block,
+    .block2 {
         width: 100%;
         margin: auto;
         margin-bottom: 30px;
@@ -30,13 +36,23 @@
 
         p {
             font-size: 22px;
-            font-weight: 500;
+            font-weight: 400;
         }
 
-        svg {
-            width: 60px;
-            height: 60px;
-            fill: rgb(148, 26, 176);
+        img {
+            width: 55px;
+            height: 47px;
+            object-fit: cover;
+            margin: 10px auto;
+        }
+    }
+
+    .block2 {
+        img {
+            width: 47px;
+            height: 47px;
+            object-fit: cover;
+            margin: 10px auto;
         }
     }
 }

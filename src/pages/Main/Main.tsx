@@ -1,5 +1,5 @@
 import s from './Main.module.scss';
-import { AiFillCaretUp, AiFillCaretDown } from 'react-icons/ai';
+import { AiFillCaretDown } from 'react-icons/ai';
 import { BsFillCircleFill, BsFillSquareFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
@@ -11,25 +11,37 @@ const Main = () => {
             <img src={logo} alt='Картинка не прогрузилась' />
             <Link to='/aroma/women'>
                 <div className={s['block']}>
-                    <AiFillCaretUp />
+                    <img
+                        src='https://app.plmuskus.ru/assets/ipad/img/woman-icon.png'
+                        alt='Картинка не пргрузилась'
+                    />
                     <p className={s.title}>Женские ароматы</p>
                 </div>
             </Link>
             <Link to='/aroma/man'>
                 <div className={s['block']}>
-                    <AiFillCaretDown />
+                    <img
+                        src='https://app.plmuskus.ru/assets/ipad/img/man-icon.png'
+                        alt='Картинка не пргрузилась'
+                    />
                     <p>Мужские ароматы</p>
                 </div>
             </Link>
             <Link to='/aroma/uneversal'>
-                <div className={s['block']}>
-                    <BsFillCircleFill />
+                <div className={s['block2']}>
+                    <img
+                        src='https://app.plmuskus.ru/assets/ipad/img/uni-icon.png'
+                        alt='Картинка не пргрузилась'
+                    />
                     <p>Универсальные ароматы</p>
                 </div>
             </Link>
             <Link to='/aroma/selection'>
-                <div className={s['block']}>
-                    <BsFillSquareFill />
+                <div className={s['block2']}>
+                    <img
+                        src='https://app.plmuskus.ru/assets/ipad/img/bottles-icon.png'
+                        alt='Картинка не пргрузилась'
+                    />{' '}
                     <p>Подбор аромата</p>
                 </div>
             </Link>
