@@ -4,11 +4,13 @@ import Header from '../../components/Header/Header';
 import { useFetch } from '../../hooks/useFetch';
 import Loader from '../../components/Loader/Loader';
 
+import { path } from '../../../path';
+
 // type Props = {};
 
 const Aroma = () => {
     const { id } = useParams();
-    const { data = [], loading } = useFetch(`http://localhost:3000/aromas/${id}`);
+    const { data = [], loading } = useFetch(`${path}aromas/${id}`);
 
     if (loading) {
         <Loader />;

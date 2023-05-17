@@ -4,13 +4,14 @@ import AromasItem from '../../components/AromasItem/AromasItem';
 import Header from '../../components/Header/Header';
 import Loader from '../../components/Loader/Loader';
 
+import { path } from '../../../path';
+
 type Props = {
     aromas: { id: 1 | 2 | 3; title: string };
 };
 
 const Aromas = ({ aromas }: Props) => {
-    const path = window.location.href;
-    const { data, loading, error } = useFetch(`http://localhost:3000/aromas?for=${aromas.id}`);
+    const { data, loading, error } = useFetch(`${path}/aromas?for=${aromas.id}`);
 
     if (loading) {
         return <Loader />;

@@ -7,6 +7,8 @@ import { useFetch } from '../../hooks/useFetch';
 import AromasItem from '../../components/AromasItem/AromasItem';
 import { Link } from 'react-router-dom';
 
+import { path } from '../../../path';
+
 const Selection = () => {
     const [stage, setStage] = useState(1);
 
@@ -15,7 +17,7 @@ const Selection = () => {
     const [purpose, setPurpose] = useState('');
     const [visibility, setVisibility] = useState('');
     const { data, error, loading } = useFetch(
-        `http://localhost:3000/aromas/?for=${forWho}&season=${season}&=${purpose}&=${visibility}`
+        `${path}aromas/?for=${forWho}&season=${season}&=${purpose}&=${visibility}`
     );
 
     const handleChangeStage = () => {
