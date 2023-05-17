@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import s from './Header.module.scss';
 
 import { AiOutlineLeft } from 'react-icons/ai';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
 
 const Header = () => {
     const navigate = useNavigate();

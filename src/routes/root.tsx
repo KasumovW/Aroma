@@ -6,6 +6,7 @@ import Aroma from '../pages/Aroma/Aroma';
 import Admin from '../pages/Admin/Admin/Admin';
 import AdminNewPost from '../pages/Admin/AdminEditPost/AdminEditPost';
 import AllPost from '../pages/Admin/AllPosts/AllPost';
+// import '../firebase';
 
 import cookies from 'js-cookie';
 import Selection from '../pages/Selection/Selection';

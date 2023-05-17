@@ -9,6 +9,9 @@ type Props = {
 const ChangePost = ({ type }: Props) => {
     const [data, setData] = useState({
         for: null,
+        season: null,
+        purpose: null,
+        visibility: null,
         number: null,
         title: null,
         price: null,
@@ -18,7 +21,7 @@ const ChangePost = ({ type }: Props) => {
     });
 
     const onSubmit = (e: any) => {
-        fetch('http://localhost:3000/aromas', {
+        fetch('https://630fd20e36e6a2a04ee2254c.mockapi.io/api/aromas', {
             method: 'POST',
             headers: {
                 Accept: 'application/json',
@@ -75,7 +78,7 @@ const ChangePost = ({ type }: Props) => {
     // console.log(data);
 
     return (
-        <>
+        <div className={s.cont}>
             <Header />
 
             <div className={s.container}>
@@ -108,12 +111,27 @@ const ChangePost = ({ type }: Props) => {
                             type='text'
                             placeholder='Ссылка на картинку'
                         />
-
                         <select onChange={(e) => handleChange('for', e.target.value)}>
                             <option value=''>--------</option>
                             <option value='1'>Женские</option>
                             <option value='2'>Мужскиие</option>
                             <option value='3'>Универсальные</option>
+                        </select>
+                        <select onChange={(e) => handleChange('season', e.target.value)}>
+                            <option value=''>--------</option>
+                            <option value='1'>Весна / Лето</option>
+                            <option value='2'>Осень / Зима</option>
+                        </select>
+                        <select onChange={(e) => handleChange('purpose', e.target.value)}>
+                            <option value=''>--------</option>
+                            <option value='1'>Деловой</option>
+                            <option value='2'>Выходной</option>
+                            <option value='3'>Повседневный</option>
+                        </select>
+                        <select onChange={(e) => handleChange('visibility', e.target.value)}>
+                            <option value=''>--------</option>
+                            <option value='1'>Заметный</option>
+                            <option value='2'>Близкий к коже</option>
                         </select>
                     </div>
                     <div className={s.akkord}>
@@ -191,7 +209,7 @@ const ChangePost = ({ type }: Props) => {
                     <button type='submit'>Готово</button>
                 </form>
             </div>
-        </>
+        </div>
     );
 };
 

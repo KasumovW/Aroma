@@ -17,7 +17,7 @@ const Selection = () => {
     const [purpose, setPurpose] = useState('');
     const [visibility, setVisibility] = useState('');
     const { data, error, loading } = useFetch(
-        `${path}aromas/?for=${forWho}&season=${season}&=${purpose}&=${visibility}`
+        `${path}/?for=${forWho}&season=${season}&=${purpose}&=${visibility}`
     );
 
     const handleChangeStage = () => {

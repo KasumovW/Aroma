@@ -1,12 +1,18 @@
 import s from './Main.module.scss';
 import { Link } from 'react-router-dom';
 
-import logo from '../../assets/logo.png';
+import logo from '../../assets/logo.webp';
+import { BsList } from 'react-icons/bs';
 
 const Main = () => {
     return (
         <div className={s.container}>
             <img src={logo} alt='Картинка не прогрузилась' />
+
+            <Link to='/admin'>
+                <BsList />
+            </Link>
+
             <Link to='/aroma/women'>
                 <div className={s['block']}>
                     <img
@@ -39,7 +45,7 @@ const Main = () => {
                     <img
                         src='https://app.plmuskus.ru/assets/ipad/img/bottles-icon.png'
                         alt='Картинка не пргрузилась'
-                    />{' '}
+                    />
                     <p>Подбор аромата</p>
                 </div>
             </Link>

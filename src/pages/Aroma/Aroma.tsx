@@ -10,7 +10,9 @@ import { path } from '../../../path';
 
 const Aroma = () => {
     const { id } = useParams();
-    const { data = [], loading } = useFetch(`${path}aromas/${id}`);
+    const { data = [], loading } = useFetch(`${path}/${id}`);
+
+    console.log(data);
 
     if (loading) {
         <Loader />;

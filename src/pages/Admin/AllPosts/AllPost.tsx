@@ -9,7 +9,7 @@ import s from './AllPosts.module.scss';
 import { useEffect, useState } from 'react';
 
 const AllPost = () => {
-    const { data, loading, error } = useFetch(`${path}aroma`);
+    const { data, loading, error } = useFetch(`${path}`);
     const [localData, setLocalData] = useState([]);
 
     useEffect(() => {
@@ -25,7 +25,7 @@ const AllPost = () => {
     }
 
     const deleteItem = (id: number) => {
-        fetch(`http://localhost:3000/aromas/${id}`, {
+        fetch(`https://630fd20e36e6a2a04ee2254c.mockapi.io/api/aromas/${id}`, {
             method: 'DELETE',
         })
             .then((res) => res.json())

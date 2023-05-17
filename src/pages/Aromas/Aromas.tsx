@@ -11,7 +11,7 @@ type Props = {
 };
 
 const Aromas = ({ aromas }: Props) => {
-    const { data, loading, error } = useFetch(`${path}/aromas?for=${aromas.id}`);
+    const { data, loading, error } = useFetch(`${path}/?for=${aromas.id}`);
 
     if (loading) {
         return <Loader />;
@@ -29,6 +29,7 @@ const Aromas = ({ aromas }: Props) => {
                 {data.map((item) => (
                     <AromasItem aroma={item} />
                 ))}
+                {!data.length && <h1>В данною категории пока нечего не доавленно...</h1>}
             </div>
         </div>
     );
